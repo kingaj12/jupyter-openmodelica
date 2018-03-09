@@ -36,13 +36,12 @@ USAGE
   To build jupyter-openmodelica 
 
   1. clone the project
-  2. cd jupyter-openmodelica
-  3. docker build -t jupyteropenmodelica . 
+  3. docker build -t jupyteropenmodelica jupyter-openmodelica/ 
   
-  After building the image jupyteropenmodelica, we are now ready to run the jupyter-openmodelica in docker container
+  After building the image jupyteropenmodelica, we are now ready to run 
 
 To use it, run:
 
-  docker run -p 8888:8888 jupyteropenmodelica
+  docker run -p 8888:8888 --user root jupyteropenmodelica
    
 
